@@ -1,0 +1,179 @@
+/* Importación de la fuente Roboto desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Aplicar la fuente Roboto a todo el documento */
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box; /* Asegura un modelo de caja consistente en todos los elementos */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif !important; /* Aplica la fuente Roboto en todo el sitio */
+  background-color: #f9f9f9; /* Color de fondo suave para toda la página */
+  margin: 0; /* Elimina márgenes por defecto */
+  padding: 0; /* Elimina padding por defecto */
+}
+
+/* Estilo para el header con la imagen y el título */
+.header {
+  display: flex; /* Alinea la imagen y el título horizontalmente */
+  align-items: center; /* Centra verticalmente la imagen y el título */
+  padding: 30px; /* Aumenta el padding para engrosar el header */
+  background-color: #ffffff; /* Fondo blanco para el header */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave debajo del header */
+  position: relative; /* Posición relativa para que los cambios en el header no afecten al contenedor */
+}
+
+/* Ajuste del tamaño del logo */
+.logo {
+  width: 80px; /* Ancho de la imagen del logo aumentado */
+  height: 80px; /* Alto de la imagen del logo aumentado */
+  margin-right: 15px; /* Espacio entre la imagen del logo y el título */
+}
+
+/* Ajuste del tamaño del texto en el header */
+.header h1 {
+  font-size: 28px; /* Tamaño del texto para el título "Aplicación" aumentado */
+  color: #333; /* Color del texto del título */
+  margin: 0; /* Elimina márgenes por defecto */
+}
+
+/* Estilo del contenedor principal de tareas */
+.task-container {
+  max-width: 500px; /* Ancho máximo del contenedor */
+  margin: 50px auto; /* Centra el contenedor horizontalmente y añade espacio superior */
+  padding: 30px; /* Espaciado interno alrededor del contenedor */
+  background-color: #ffffff; /* Fondo blanco para el contenedor */
+  border-radius: 8px; /* Bordes redondeados para el contenedor */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor del contenedor */
+  transform: translateX(-50px); /* Desplaza el contenedor 50px hacia la izquierda */
+}
+
+
+/* Estilo para el subtítulo */
+.task-container h2 {
+  font-size: 22px; /* Tamaño del texto del subtítulo */
+  color: #333; /* Color del texto del subtítulo */
+  margin-bottom: 20px; /* Espacio inferior debajo del subtítulo */
+  text-align: center; /* Centra el subtítulo horizontalmente */
+}
+
+/* Estilos para la lista de tareas */
+ul {
+  list-style-type: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina padding por defecto */
+  margin: 0; /* Elimina márgenes por defecto */
+}
+
+/* Estilos para cada tarea */
+li {
+  display: flex; /* Alinea el texto y el botón horizontalmente */
+  justify-content: space-between; /* Espacia el texto y el botón al máximo posible */
+  align-items: center; /* Centra verticalmente el contenido */
+  background-color: #f0f0f0; /* Fondo gris claro para cada tarea */
+  padding: 10px 15px; /* Espaciado interno de cada tarea */
+  border-radius: 5px; /* Bordes redondeados para cada tarea */
+  margin-bottom: 10px; /* Espacio inferior entre tareas */
+}
+
+/* Estilo para el texto de la tarea */
+li span {
+  flex-grow: 1; /* Permite que el texto ocupe todo el espacio disponible */
+  color: #333; /* Color del texto de la tarea */
+}
+
+/* Estilos para el botón eliminar dentro de las tareas */
+.btn-eliminar {
+  background-color: #e74c3c; /* Fondo rojo para el botón eliminar */
+  color: #fff; /* Texto en blanco */
+  border: none; /* Sin bordes */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 6px 12px; /* Espaciado interno del botón */
+  cursor: pointer; /* Cursor de puntero al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave al cambiar de color */
+  font-size: 14px; /* Tamaño de fuente del botón */
+}
+
+/* Efecto hover para el botón eliminar */
+.btn-eliminar:hover {
+  background-color: #c0392b; /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilo para el contenedor de entrada y botón agregar */
+.input-container {
+  display: flex; /* Alinea el input y el botón horizontalmente */
+  margin-top: 20px; /* Espacio superior encima del contenedor */
+}
+
+/* Estilos para el campo de entrada */
+input[type="text"] {
+  flex-grow: 1; /* Permite que el input ocupe todo el espacio disponible */
+  padding: 10px; /* Espaciado interno del input */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente del input */
+  margin-right: 10px; /* Espacio a la derecha entre el input y el botón */
+}
+
+/* Estilos para el botón agregar tarea */
+.btn-agregar {
+  background-color: #4caf50; /* Fondo verde para el botón agregar */
+  color: #fff; /* Texto en blanco */
+  border: none; /* Sin bordes */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 15px; /* Espaciado interno del botón */
+  cursor: pointer; /* Cursor de puntero al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave al cambiar de color */
+  font-size: 16px; /* Tamaño de fuente del botón */
+}
+
+/* Efecto hover para el botón agregar tarea */
+.btn-agregar:hover {
+  background-color: #45a049; /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilo para el contenedor de los botones adicionales */
+.botones-container {
+  display: flex; /* Alinea los botones horizontalmente */
+  justify-content: space-between; /* Espacia los botones al máximo posible */
+  margin-top: 25px; /* Espacio superior encima del contenedor */
+}
+
+/* Estilos para el botón descargar tareas */
+.btn-descargar {
+  background-color: #3498db; /* Fondo azul para el botón descargar */
+  color: #fff; /* Texto en blanco */
+  border: none; /* Sin bordes */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 15px; /* Espaciado interno del botón */
+  cursor: pointer; /* Cursor de puntero al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave al cambiar de color */
+  font-size: 16px; /* Tamaño de fuente del botón */
+  flex: 1; /* Permite que el botón ocupe el mismo espacio que el otro */
+  margin-right: 10px; /* Espacio a la derecha entre los botones */
+}
+
+/* Efecto hover para el botón descargar tareas */
+.btn-descargar:hover {
+  background-color: #2980b9; /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilos para el botón borrar todas las tareas */
+.btn-borrar-todas {
+  background-color: #e74c3c; /* Fondo rojo para el botón borrar todas */
+  color: #fff; /* Texto en blanco */
+  border: none; /* Sin bordes */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 15px; /* Espaciado interno del botón */
+  cursor: pointer; /* Cursor de puntero al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave al cambiar de color */
+  font-size: 16px; /* Tamaño de fuente del botón */
+  flex: 1; /* Permite que el botón ocupe el mismo espacio que el otro */
+}
+
+/* Efecto hover para el botón borrar todas las tareas */
+.btn-borrar-todas:hover {
+  background-color: #c0392b; /* Color más oscuro al pasar el mouse */
+}
